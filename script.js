@@ -40,8 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
             backToTopBtn.classList.remove('show');
         }
     });
-    
-    // NOTE: The old Mailto JS logic has been removed entirely. 
-    // The form now securely relies on the standard HTML <form action="..."> 
-    // attribute to post to Formspree without relying on user client configurations.
 });

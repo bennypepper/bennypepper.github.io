@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">BP.</a>
-            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-1 text-primary-color"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,6 +24,7 @@
                     <li class="nav-item"><a class="nav-link" href="#experience">Journey</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -41,7 +42,8 @@
                         <a href="#projects" class="btn-custom">
                             Explore Projects <i class="bi bi-arrow-down-right"></i>
                         </a>
-                        <a href="resume.pdf" class="btn-outline-custom d-flex align-items-center gap-2" download="Benedict_Pepper_Resume.pdf">
+                        <!-- UPDATED PATH: Pointing to docs folder -->
+                        <a href="docs/resume.pdf" class="btn-outline-custom d-flex align-items-center gap-2" download="Benedict_Pepper_Resume.pdf">
                             <i class="bi bi-file-earmark-pdf"></i> Download CV
                         </a>
                         <a href="https://github.com/bennypepper" target="_blank" class="btn-outline-custom d-flex align-items-center gap-2">
@@ -63,7 +65,8 @@
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-5 reveal">
-                    <img src="profile.png" alt="Benedict Pepper Portrait" style="width: 70%; height: 450px; object-fit: cover; border: 2px solid var(--primary-color); box-shadow: -15px 15px 0px var(--accent-color);">
+                   
+                    <img src="assets/profile.png" alt="Benedict Pepper Portrait" style="width: 75%; height: 450px; object-fit: cover; border: 2px solid var(--primary-color); box-shadow: -15px 15px 0px var(--accent-color);">
                 </div>
                 <div class="col-lg-7 reveal delay-1">
                     <h2 class="section-title">About Me</h2>
@@ -79,32 +82,61 @@
         </div>
     </section>
 
-    <!-- NEW EXPERIENCE TIMELINE SECTION -->
     <section id="experience" style="background-color: rgba(84, 119, 146, 0.05); border-top: 2px solid var(--primary-color);">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 reveal">
                     <h2 class="section-title">My<br>Journey</h2>
-                    <p class="fs-5 mt-3 text-muted">A timeline of my academic and professional growth.</p>
+                    <p class="fs-5 mt-3 text-muted">A timeline of my academic, professional, and leadership growth.</p>
                 </div>
                 <div class="col-lg-8 reveal delay-1">
                     <div class="timeline">
+                        
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <h4>Computer Science Student</h4>
-                                <p class="mb-2 fw-bold" style="color: var(--secondary-color);">Ma Chung University | 2021 - Present</p>
-                                <p class="mb-0">Currently in my 6th semester. Focused on Data Analytics, Machine Learning, and Software Engineering. Consistently bridging the gap between theoretical computer science and practical, real-world applications.</p>
+                                <h4>Technical Researcher (PKM-KI)</h4>
+                                <p class="mb-2 fw-bold" style="color: var(--secondary-color);">National Student Creativity Program | 2026 - Present</p>
+                                <p class="mb-0">Collaborating on 'FitMe', an interdisciplinary health-tech innovation funded by the government. Leading the technical development of a Python-based rule-based chatbot and website integrated with the WhatsApp API to translate Mandarin herbal medicine labels and prevent medication errors.</p>
                             </div>
                         </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Quantitative Research Intern (PKL)</h4>
+                                <p class="mb-2 fw-bold" style="color: var(--secondary-color);">Ma Chung University | 2024 - Present</p>
+                                <p class="mb-0">Conducting advanced research on the effectiveness of CBBI (Colin Talks Crypto Bitcoin Bull Run Index) indicators. Utilizing Python, Machine Learning (Random Forest, Logistic Regression), and Backtesting to classify Bitcoin market cycles across 3 halving periods.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Treasurer & Event Manager</h4>
+                                <p class="mb-2 fw-bold" style="color: var(--secondary-color);">Informatics Engineering Student Association (HMP) | Oct 2023 - Jun 2025</p>
+                                <p class="mb-0">Managed financial planning and cross-functional teams for major university programs. Coordinated the 'IT School' workshop for 100+ high school students and led the 'Harmony IT' outdoor integration program, successfully optimizing the budget by 53%.</p>
+                            </div>
+                        </div>
+
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <h4>Project Manager & Lead Dev</h4>
                                 <p class="mb-2 fw-bold" style="color: var(--secondary-color);">Academic Projects | 2023 - 2024</p>
-                                <p class="mb-0">Spearheaded full-stack and data science projects, coordinating with team members to deliver high-quality applications like 'LaporAman' and various analytical tools under tight deadlines.</p>
+                                <p class="mb-0">Spearheaded full-stack and data science projects, coordinating with team members to deliver high-quality applications like 'Lapor Aman' and various analytical tools under tight deadlines.</p>
                             </div>
                         </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Active Volunteer & Committee Member</h4>
+                                <p class="mb-2 fw-bold" style="color: var(--secondary-color);">Rotaract Club & Ma Chung Festival | 2024</p>
+                                <p class="mb-0">Served on the Health Division Committee ensuring safety protocols for 250+ students. Previously managed operations for the Smile 3.0 blood donation event, achieving a 110% increase in participation metrics.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -274,6 +306,89 @@
         </div>
     </section>
 
+    <!-- RESEARCH & PUBLICATIONS SECTION -->
+    <section id="research" style="background-color: rgba(84, 119, 146, 0.05); border-top: 2px solid var(--primary-color);">
+        <div class="container">
+            <h2 class="section-title mb-5">Academic Research</h2>
+            <div class="row g-4">
+                
+                <div class="col-12 reveal">
+                    <div class="research-card">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-2">
+                            <h4 class="mb-0">Evaluasi Efektivitas Indikator CBBI untuk Klasifikasi Return Bitcoin</h4>
+                            <span class="badge bg-custom-accent">Ongoing PKL Research</span>
+                        </div>
+                        <p class="research-authors text-muted mb-3"><strong>Keywords:</strong> Quantitative Finance, Machine Learning, Backtesting, On-chain Metrics</p>
+                        <p>An empirical evaluation of the Colin Talks Crypto Bitcoin Bull Run Index (CBBI) as a classification signal for market cycles. This research utilizes Backtesting and Machine Learning (Random Forest & Logistic Regression) on historical data spanning 3 halving cycles to identify the most predictive on-chain indicators for forward returns.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 reveal delay-1">
+                    <div class="research-card">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-2">
+                            <h4 class="mb-0">FitMe: Inovasi Alat Pemindai Label Obat Herbal Berbahasa Mandarin</h4>
+                            <span class="badge bg-custom-accent">Ongoing PKM-KI Research</span>
+                        </div>
+                        <p class="research-authors text-muted mb-3"><strong>Keywords:</strong> Health-Tech, Rule-Based Chatbot, Python, WhatsApp API, Patient Safety</p>
+                        <p>An interdisciplinary research and development project funded under the national Student Creativity Program (PKM-KI). Focusing on a digital solution that integrates a web platform and a Python chatbot to scan and translate Mandarin herbal medicine labels. The system educates users on safe dosages and potential drug interactions to prevent unsupervised self-medication and kidney damage.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 reveal delay-2">
+                    <div class="research-card">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-2">
+                            <h4 class="mb-0">Perbandingan Arsitektur CNN untuk Klasifikasi Pneumonia</h4>
+                            <span class="badge bg-custom-accent">Academic Manuscript</span>
+                        </div>
+                        <p class="research-authors text-muted mb-3"><strong>Keywords:</strong> Deep Learning, EfficientNet, Transfer Learning, Progressive Resizing</p>
+                        <p>A comparative study on training strategies for classifying Bacterial vs. Viral Pneumonia using Pediatric Chest X-Rays. The research demonstrated that fixed-size resolution training outperformed progressive resizing, achieving a final accuracy of <strong>87.14%</strong> and an ROC AUC of 0.9431, optimizing computer-aided diagnostic reliability.</p>
+                        <div class="mt-3">
+                            
+                            <a href="docs/manuskrip_deep_learning.pdf" download="Perbandingan_Arsitektur_CNN_Manuscript.pdf" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                                <i class="bi bi-file-earmark-pdf"></i> Download Manuscript
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 reveal delay-3">
+                    <div class="research-card">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-2">
+                            <h4 class="mb-0">Revitalisasi Website E-Commerce SLB Autisme River Kids</h4>
+                            <span class="badge bg-custom-accent">Academic Manuscript</span>
+                        </div>
+                        <p class="research-authors text-muted mb-3"><strong>Keywords:</strong> UI/UX Design, System Usability Scale (SUS), Web Accessibility</p>
+                        <p>Conducted a participatory UI/UX redesign of an e-commerce platform for special needs students' crafts. Through quantitative evaluation using the System Usability Scale, the intervention yielded a <strong>25.4% improvement</strong> (from 57.81 to 72.50), elevating the platform's category from 'Marginal' to 'Good' and improving public visibility.</p>
+                        <div class="mt-3">
+                           
+                            <a href="docs/manuskrip_kewarganegaraan.pdf" download="Revitalisasi_Website_River_Kids_Manuscript.pdf" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                                <i class="bi bi-file-earmark-pdf"></i> Download Manuscript
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 reveal delay-4">
+                    <div class="research-card">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-2">
+                            <h4 class="mb-0">Survei Penggunaan Gaya Bahasa dalam Salindia Teknik Informatika</h4>
+                            <span class="badge bg-custom-accent">Course Research Report</span>
+                        </div>
+                        <p class="research-authors text-muted mb-3"><strong>Keywords:</strong> Academic Communication, Linguistics, Content Analysis</p>
+                        <p>A qualitative content analysis evaluating the formal vs. informal language usage in Artificial Intelligence course presentations. The study categorized syntactic structures and diction across multiple student groups, highlighting the critical role of formal linguistic norms in maintaining academic professionalism.</p>
+                        <div class="mt-3">
+                            
+                            <a href="docs/laporan_ilmiah_bahasa_indonesia.pdf" download="Survei_Gaya_Bahasa_Report.pdf" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                                <i class="bi bi-file-earmark-pdf"></i> View Full Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <div class="row g-5">
@@ -307,7 +422,6 @@
                     <div class="bg-white p-5" style="border: 2px solid var(--primary-color); box-shadow: -15px 15px 0px var(--accent-color);">
                         <h4 class="mb-4" style="color: var(--primary-color);">Send a Message</h4>
                         
-                        <!-- UPDATE YOUR FORMSPREE ID HERE -->
                         <form id="contactForm" class="contact-form" action="https://formspree.io/f/xbdzwybr" method="POST">
                             <div class="mb-4">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name" style="color: var(--primary-color); border-bottom-color: var(--primary-color);" required>

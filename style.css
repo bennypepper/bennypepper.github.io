@@ -170,7 +170,6 @@ section {
     box-shadow: 2px 2px 0px var(--accent-color);
 }
 
-/* Secondary Button for Live Demos */
 .btn-outline-demo {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -348,6 +347,37 @@ section {
     text-transform: uppercase;
 }
 
+/* Horizontal Research Cards */
+.research-card {
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 25px 30px;
+    box-shadow: 6px 6px 0px var(--secondary-color);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.research-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0px var(--accent-color);
+}
+
+.bg-custom-accent {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.research-authors {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
 /* Asymmetrical layout helper */
 .mt-lg-custom {
     margin-top: 0;
@@ -385,7 +415,7 @@ section {
 
 /* Accessibility Fix: Improved Placeholder Contrast */
 .contact-form .form-control::placeholder {
-    color: #b0c9db; /* Brighter, more opaque blue-grey */
+    color: #b0c9db; 
     opacity: 1; 
 }
 
