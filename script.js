@@ -31,23 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Mailto Form Logic
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Stop the page from reloading
-            
-            // Get values from the inputs
-            const name = document.getElementById('senderName').value;
-            const email = document.getElementById('senderEmail').value;
-            const message = document.getElementById('messageBody').value;
-            
-            // Format the email subject and body
-            const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
-            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-            
-            // Trigger the user's default email client
-            window.location.href = `mailto:benedictmpepper@gmail.com?subject=${subject}&body=${body}`;
-        });
-    }
+    // 3. Back to Top Button Logic
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+    
+    // NOTE: The old Mailto JS logic has been removed entirely. 
+    // The form now securely relies on the standard HTML <form action="..."> 
+    // attribute to post to Formspree without relying on user client configurations.
 });
